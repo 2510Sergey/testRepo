@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+<!-- id задания: 51
+Задание: Заполните массив с помощью цикла следующим образом: в первый элемент запишите '1', во второй '22', в третий '333' и так далее. -->
+
+  <script>
+
+
+let ARR = [];
+
+for (i=1,z=0;i<5;i++,z++) {
+		if (z=0){
+			ARR.push(i);
+		}	else {
+			do {z>=i} while (
+				i = toString(i);
+				i = i.repeat(z);
+				ARR.push(i);
+			)
+		}
+}
+
+console.log(ARR);
+
+
+  </script>
+</body>
+</html>
